@@ -1,11 +1,5 @@
 name: "snyk test"
-on: 
-  push:
-  pull_request:
-  workflow_call:
-    secrets:
-      SNYK_TOKEN:
-        required: true
+on: [push,pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
