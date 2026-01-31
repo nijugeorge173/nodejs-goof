@@ -2,6 +2,7 @@ name: "snyk test"
 on: [push,pull_request]
 jobs:
   build:
+    environment: SNYK
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
